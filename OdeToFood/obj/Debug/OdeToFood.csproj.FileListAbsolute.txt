@@ -170,3 +170,5 @@ D:\GIT Projects\OdeToFood\OdeToFood\bin\zh-Hant\System.Spatial.resources.dll
 D:\GIT Projects\OdeToFood\OdeToFood\obj\Debug\OdeToFood.csprojResolveAssemblyReference.cache
 D:\GIT Projects\OdeToFood\OdeToFood\obj\Debug\OdeToFood.dll
 D:\GIT Projects\OdeToFood\OdeToFood\obj\Debug\OdeToFood.pdb
+D:\GIT Projects\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.InitialCreate.resources
+D:\GIT Projects\OdeToFood\OdeToFood\obj\Debug\OdeToFood.csproj.GenerateResource.Cache

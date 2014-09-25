@@ -9,11 +9,24 @@ namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+        OdeToFoodDb _db = new OdeToFoodDb();
 
-            return View();
+        public ActionResult Index(string searchTerm = null)
+        {
+            var model = _db.Restaurants
+                .OrderByDescending(r => r.Reviews.Average(rev => rev.Rating))
+                .Where(r => searchTerm == null || r.Name.StartsWith(searchTerm))
+                .Take(10)
+                .Select(r => new RestaurantListViewModel
+                            {
+                                Id = r.Id,
+                                Name = r.Name,
+                                City = r.City,
+                                Country = r.Country,
+                                CountOfReviews = r.Reviews.Count()
+                            });
+
+            return View(model);
         }
 
         public ActionResult About()
@@ -30,6 +43,16 @@ namespace OdeToFood.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (_db != null)
+            {
+                _db.Dispose();
+            }
+            base.Dispose(disposing);
+
         }
     }
 }
