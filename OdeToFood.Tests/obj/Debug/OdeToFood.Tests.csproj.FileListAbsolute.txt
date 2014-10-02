@@ -162,3 +162,5 @@ D:\GIT Projects\OdeToFood\OdeToFood.Tests\bin\Debug\zh-Hant\System.Spatial.resou
 D:\GIT Projects\OdeToFood\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.csprojResolveAssemblyReference.cache
 D:\GIT Projects\OdeToFood\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.dll
 D:\GIT Projects\OdeToFood\OdeToFood.Tests\obj\Debug\OdeToFood.Tests.pdb
+D:\GIT Projects\OdeToFood\OdeToFood.Tests\bin\Debug\PagedList.dll
+D:\GIT Projects\OdeToFood\OdeToFood.Tests\bin\Debug\PagedList.xml
